@@ -48,7 +48,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-
+ 
     <DataTemplate x:Key="vertical">
         <controls:DockPanel VerticalAlignment="Top">
             <Rectangle x:Name="rect" Width="4" controls:DockPanel.Dock="Right" Height="1" VerticalAlignment="Center" Fill="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=Foreground}">

@@ -9,7 +9,7 @@ using Windows.UI.Xaml.Documents;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 
-namespace RealTimeGraphX.UWP.Demo
+namespace RealTimeGraphX.UWP.Controls
 {
     public sealed class UwpGraphControl : Control
     {
