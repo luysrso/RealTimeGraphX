@@ -13,10 +13,11 @@
         <Setter Property="Foreground" Value="DodgerBlue"></Setter>
         <Setter Property="Background">
             <Setter.Value>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" >
+                <!--<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" >
                     <GradientStop Color="Black"/>
                     <GradientStop Color="#FF333333" Offset="1"/>
-                </LinearGradientBrush>
+                </LinearGradientBrush>-->
+                <SolidColorBrush Color="#FF1A1A1A" />
             </Setter.Value>
         </Setter>
         <Setter Property="Template">
@@ -30,7 +31,7 @@
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="1*"/>
-                                <RowDefinition Height="35"/>
+                                <!--<RowDefinition Height="35"/>-->
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="70"/>
@@ -38,12 +39,12 @@
                             </Grid.ColumnDefinitions>   
 
                             <Grid Grid.Column="1">
-                                <realTimeGraphX:UwpGraphGridLines Controller="{TemplateBinding Controller}" Foreground="#FF2E2E2E" />
-                                <realTimeGraphX:UwpGraphSurface x:Name="surface" Controller="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Mode=OneWay,Path=Controller}" DisplayToolTip="{TemplateBinding DisplayToolTip}" BorderThickness="1 0 0 1" BorderBrush="{TemplateBinding Foreground}" />
+                                <!--<realTimeGraphX:UwpGraphGridLines Controller="{TemplateBinding Controller}" Foreground="#FF2E2E2E" />-->
+                                <realTimeGraphX:LimGraphSurface x:Name="surface"   Controller="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Mode=OneWay,Path=Controller}" DisplayToolTip="{TemplateBinding DisplayToolTip}" BorderThickness="1 0 0 1" BorderBrush="{TemplateBinding Foreground}" />
                             </Grid>
 
                             <realTimeGraphX:UwpGraphAxisControl Orientation="Vertical" Controller="{TemplateBinding Controller}" StringFormat="0.0" />
-                            <realTimeGraphX:UwpGraphAxisControl Orientation="Horizontal" Controller="{TemplateBinding Controller}" Grid.Column="1" Grid.Row="1" StringFormat="hh\:mm\:ss"/>
+                            <!--<realTimeGraphX:UwpGraphAxisControl Orientation="Horizontal" Controller="{TemplateBinding Controller}" Grid.Column="1" Grid.Row="1" StringFormat="hh\:mm\:ss"/>-->
                         </Grid>
                     </Border>
                 </ControlTemplate>

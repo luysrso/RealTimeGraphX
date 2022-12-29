@@ -24,6 +24,8 @@ namespace RealTimeGraphX.UWP.Controls
         public static readonly DependencyProperty ControllerProperty =
             DependencyProperty.Register("Controller", typeof(IGraphController), typeof(UwpGraphControl), new PropertyMetadata(null));
 
+         
+
         /// <summary>
         /// Gets or sets a value indicating whether to display a tool tip with the current cursor value.
         /// </summary>
@@ -38,6 +40,7 @@ namespace RealTimeGraphX.UWP.Controls
         public UwpGraphControl()
         {
             this.DefaultStyleKey = typeof(UwpGraphControl);
+             
         }
     }
 }

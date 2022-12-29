@@ -29,7 +29,7 @@ namespace RealTimeGraphX.UWP
         private System.Drawing.SizeF _size;
         private System.Drawing.RectangleF _zoom_rect;
         private bool _size_changed;
-        private CanvasDrawingSession _session;
+        protected CanvasDrawingSession _session;
         private CanvasControl _canvas2d;
         private Windows.UI.Xaml.Shapes.Rectangle _selection_rectangle;
         private Canvas _selection_canvas;
@@ -446,7 +446,7 @@ namespace RealTimeGraphX.UWP
         /// </summary>
         /// <param name="dataSeries">The data series.</param>
         /// <param name="points">The points.</param>
-        public void DrawSeries(UwpGraphDataSeries dataSeries, IEnumerable<System.Drawing.PointF> points)
+        public virtual void DrawSeries(UwpGraphDataSeries dataSeries, IEnumerable<System.Drawing.PointF> points)
         {
             List<Vector2> vPoints = points.Select(x => new Vector2(x.X, x.Y)).ToList();
             _session.DrawPolyline(vPoints, dataSeries.Stroke, dataSeries.StrokeThickness);

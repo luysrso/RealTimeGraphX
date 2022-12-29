@@ -109,6 +109,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="LimGraphSurface.cs" />
     <Compile Include="UwpGraphGridLines.cs" />
     <Compile Include="UwpBindingElement.cs" />
     <Compile Include="ExtensionMethods.cs" />
