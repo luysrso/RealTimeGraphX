@@ -20,7 +20,10 @@ namespace RealTimeGraphX.UWP
   
         public void ClonePoints()
         {
-            cibf = new List<PointF>(Points); 
+            if(Points != null)
+            {
+                cibf = new List<PointF>(Points);
+            } 
         }
         public override void DrawSeries(UwpGraphDataSeries dataSeries, IEnumerable<System.Drawing.PointF> points)
         {
