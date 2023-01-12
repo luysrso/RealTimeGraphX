@@ -1,0 +1,2000 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RealTimeGraphX</name>
+    </assembly>
+    <members>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.DateTimeDataPoint"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.DateTimeDataPoint"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.op_Implicit(System.DateTime)~RealTimeGraphX.DataPoints.DateTimeDataPoint">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.TimeSpan"/> to <see cref="T:RealTimeGraphX.DataPoints.DateTimeDataPoint"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.op_Subtraction(RealTimeGraphX.DataPoints.DateTimeDataPoint,RealTimeGraphX.DataPoints.DateTimeDataPoint)">
+            <summary>
+            Implements the operator -.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.op_Addition(RealTimeGraphX.DataPoints.DateTimeDataPoint,RealTimeGraphX.DataPoints.DateTimeDataPoint)">
+            <summary>
+            Implements the operator +.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value and returns a new instance of <see cref="!:TDataType" /> data point.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DateTimeDataPoint.OnGetDefaultMargins">
+            <summary>
+            Return the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.DataPoints.DoubleDataPoint">
+            <summary>
+            Represents a graph <see cref="T:System.Double"/> value data point.
+            </summary>
+            <seealso cref="!:RealTimeGraphX.GraphDataPoint&lt;System.Double, RealTimeGraphX.DataPoints.DoubleDataPoint&gt;" />
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.DoubleDataPoint"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.DoubleDataPoint"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.op_Implicit(System.Double)~RealTimeGraphX.DataPoints.DoubleDataPoint">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.Double"/> to <see cref="T:RealTimeGraphX.DataPoints.DoubleDataPoint"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.op_Subtraction(RealTimeGraphX.DataPoints.DoubleDataPoint,RealTimeGraphX.DataPoints.DoubleDataPoint)">
+            <summary>
+            Implements the operator -.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.op_Addition(RealTimeGraphX.DataPoints.DoubleDataPoint,RealTimeGraphX.DataPoints.DoubleDataPoint)">
+            <summary>
+            Implements the operator +.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value and returns a new instance of <see cref="!:TDataType" /> data point.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.DoubleDataPoint.OnGetDefaultMargins">
+            <summary>
+            Return the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.DataPoints.FloatDataPoint">
+            <summary>
+            Represents a graph <see cref="T:System.Single"/> value data point.
+            </summary>
+            <seealso cref="!:RealTimeGraphX.GraphDataPoint&lt;float, RealTimeGraphX.DataPoints.FloatDataPoint&gt;" />
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.FloatDataPoint"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.FloatDataPoint"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.op_Implicit(System.Single)~RealTimeGraphX.DataPoints.FloatDataPoint">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.Single"/> to <see cref="T:RealTimeGraphX.DataPoints.FloatDataPoint"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.op_Subtraction(RealTimeGraphX.DataPoints.FloatDataPoint,RealTimeGraphX.DataPoints.FloatDataPoint)">
+            <summary>
+            Implements the operator -.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.op_Addition(RealTimeGraphX.DataPoints.FloatDataPoint,RealTimeGraphX.DataPoints.FloatDataPoint)">
+            <summary>
+            Implements the operator +.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value and returns a new instance of <see cref="!:TDataType" /> data point.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.FloatDataPoint.OnGetDefaultMargins">
+            <summary>
+            Return the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.DataPoints.Int32DataPoint">
+            <summary>
+            Represents a graph <see cref="T:System.Int32"/> value data point.
+            </summary>
+            <seealso cref="!:RealTimeGraphX.GraphDataPoint&lt;System.Int32, RealTimeGraphX.DataPoints.Int32DataPoint&gt;" />
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.Int32DataPoint"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.Int32DataPoint"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.op_Implicit(System.Int32)~RealTimeGraphX.DataPoints.Int32DataPoint">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.Int32"/> to <see cref="T:RealTimeGraphX.DataPoints.Int32DataPoint"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.op_Subtraction(RealTimeGraphX.DataPoints.Int32DataPoint,RealTimeGraphX.DataPoints.Int32DataPoint)">
+            <summary>
+            Implements the operator -.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.op_Addition(RealTimeGraphX.DataPoints.Int32DataPoint,RealTimeGraphX.DataPoints.Int32DataPoint)">
+            <summary>
+            Implements the operator +.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value and returns a new instance of <see cref="!:TDataType" /> data point.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.Int32DataPoint.OnGetDefaultMargins">
+            <summary>
+            Return the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.DataPoints.TimeSpanDataPoint">
+            <summary>
+            Represents a graph <see cref="T:System.TimeSpan"/> value data point.
+            </summary>
+            <seealso cref="!:RealTimeGraphX.GraphDataPoint&lt;System.TimeSpan, RealTimeGraphX.DataPoints.TimeSpanDataPoint&gt;" />
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.TimeSpanDataPoint"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.#ctor(System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.DataPoints.TimeSpanDataPoint"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.op_Implicit(System.TimeSpan)~RealTimeGraphX.DataPoints.TimeSpanDataPoint">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.TimeSpan"/> to <see cref="T:RealTimeGraphX.DataPoints.TimeSpanDataPoint"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.op_Subtraction(RealTimeGraphX.DataPoints.TimeSpanDataPoint,RealTimeGraphX.DataPoints.TimeSpanDataPoint)">
+            <summary>
+            Implements the operator -.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.op_Addition(RealTimeGraphX.DataPoints.TimeSpanDataPoint,RealTimeGraphX.DataPoints.TimeSpanDataPoint)">
+            <summary>
+            Implements the operator +.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value and returns a new instance of <see cref="!:TDataType" /> data point.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.DataPoints.TimeSpanDataPoint.OnGetDefaultMargins">
+            <summary>
+            Return the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.EventArguments.RangeChangedEventArgs">
+            <summary>
+            Represents a graph range change event arguments.
+            </summary>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="P:RealTimeGraphX.EventArguments.RangeChangedEventArgs.MinimumX">
+            <summary>
+            Gets or sets the minimum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.EventArguments.RangeChangedEventArgs.MaximumX">
+            <summary>
+            Gets or sets the maximum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.EventArguments.RangeChangedEventArgs.MinimumY">
+            <summary>
+            Gets or sets the minimum y value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.EventArguments.RangeChangedEventArgs.MaximumY">
+            <summary>
+            Gets or sets the maximum y value.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.EventArguments.RangeChangedEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.EventArguments.RangeChangedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.EventArguments.RangeChangedEventArgs.#ctor(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.EventArguments.RangeChangedEventArgs"/> class.
+            </summary>
+            <param name="minimumX">The minimum x value.</param>
+            <param name="maximumX">The maximum x value.</param>
+            <param name="minimumY">The minimum y value.</param>
+            <param name="maximumY">The maximum y value.</param>
+        </member>
+        <member name="T:RealTimeGraphX.GraphCommand">
+            <summary>
+            Represents a graph relay command.
+            </summary>
+            <seealso cref="T:System.Windows.Input.ICommand" />
+        </member>
+        <member name="M:RealTimeGraphX.GraphCommand.#ctor(System.Action,System.Func{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphCommand"/> class.
+            </summary>
+            <param name="action">The action.</param>
+            <param name="canExecute">The can execute.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphCommand.#ctor(System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphCommand"/> class.
+            </summary>
+            <param name="action">The action.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphCommand.CanExecute(System.Object)">
+            <summary>
+            Defines the method that determines whether the command can execute in its current state.
+            </summary>
+            <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+            <returns>
+            true if this command can be executed; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphCommand.Execute(System.Object)">
+            <summary>
+            Defines the method to be called when the command is invoked.
+            </summary>
+            <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphCommand.RaiseCanExecuteChanged">
+            <summary>
+            Raises the can execute changed event.
+            </summary>
+        </member>
+        <member name="E:RealTimeGraphX.GraphCommand.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should execute.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphController`3">
+            <summary>
+            Represents an <see cref="T:RealTimeGraphX.IGraphController`3"/> base class.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <typeparam name="TXDataPoint">The type of the x data point.</typeparam>
+            <typeparam name="TYDataPoint">The type of the y data point.</typeparam>
+            <seealso cref="T:RealTimeGraphX.GraphObject" />
+            <seealso cref="T:RealTimeGraphX.IGraphController`3" />
+        </member>
+        <member name="E:RealTimeGraphX.GraphController`3.EffectiveRangeChanged">
+            <summary>
+            Occurs when the current effective minimum/maximum has changed.
+            </summary>
+        </member>
+        <member name="E:RealTimeGraphX.GraphController`3.VirtualRangeChanged">
+            <summary>
+            Occurs when the current virtual (effective minimum/maximum after transformation) minimum/maximum has changed.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.RefreshRate">
+            <summary>
+            Gets or sets the controller refresh rate.
+            Higher rate requires more CPU time.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.IsPaused">
+            <summary>
+            Gets or sets a value indicating whether to pause rendering.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.DisableRendering">
+            <summary>
+            Gets or sets a value indicating whether to disable the rendering of data.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.DataSeriesCollection">
+            <summary>
+            Gets the data series collection.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.Renderer">
+            <summary>
+            Gets or sets the graph renderer.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.Surface">
+            <summary>
+            Gets or sets the rendering surface.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.Range">
+            <summary>
+            Gets or sets the graph range (data point boundaries).
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.EffectiveMinimumX">
+            <summary>
+            Gets the current effective x-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.EffectiveMaximumX">
+            <summary>
+            Gets the current effective x-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.EffectiveMinimumY">
+            <summary>
+            Gets the current effective y-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.EffectiveMaximumY">
+            <summary>
+            Gets the current effective y-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.VirtualMinimumX">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) x-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.VirtualMaximumX">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) x-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.VirtualMinimumY">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) y-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.VirtualMaximumY">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) y-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphController`3.ClearCommand">
+            <summary>
+            Gets the clear command.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphController`3"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.RenderThreadMethod">
+            <summary>
+            The rendering thread method.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.OnSurfaceChanged(RealTimeGraphX.IGraphSurface{`0},RealTimeGraphX.IGraphSurface{`0})">
+            <summary>
+            Called when the surface has changed.
+            </summary>
+            <param name="previous">The previous.</param>
+            <param name="surface">The surface.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.OnEffectiveRangeChanged(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Raises the <see cref="E:RealTimeGraphX.GraphController`3.EffectiveRangeChanged"/> event.
+            </summary>
+            <param name="minimumX">The minimum x.</param>
+            <param name="maximumX">The maximum x.</param>
+            <param name="minimumY">The minimum y.</param>
+            <param name="maximumY">The maximum y.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.OnVirtualRangeChanged(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Raises the <see cref="E:RealTimeGraphX.GraphController`3.VirtualRangeChanged"/> event.
+            </summary>
+            <param name="minimumX">The minimum x.</param>
+            <param name="maximumX">The maximum x.</param>
+            <param name="minimumY">The minimum y.</param>
+            <param name="maximumY">The maximum y.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.ConvertXValueToRendererValue(System.Double)">
+            <summary>
+            Converts the specified relative x position to graph absolute position.
+            </summary>
+            <param name="x">The relative x position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.ConvertYValueToRendererValue(System.Double)">
+            <summary>
+            Converts the specified relative y position to graph absolute position.
+            </summary>
+            <param name="y">The relative y position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.Surface_ZoomRectChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the ZoomRectChanged event of the Surface control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.Surface_SurfaceSizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the SurfaceSizeChanged event of the Surface control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.PushData(`1,`2)">
+            <summary>
+            Submits the specified x and y data points.
+            If the controller has more than one data series the data points will be duplicated.
+            </summary>
+            <param name="x">X data point.</param>
+            <param name="y">Y data point.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.PushData(System.Collections.Generic.IEnumerable{`1},System.Collections.Generic.IEnumerable{`2})">
+            <summary>
+            Submits the specified collections of x and y data points.
+            If the controller has more than one data series the data points will be distributed evenly.
+            </summary>
+            <param name="xx">X data point collection.</param>
+            <param name="yy">Y data point collection.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.PushData(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{`1}},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{`2}})">
+            <summary>
+            Submits a matrix of x and y data points. Meaning each data series should process a single collection of x/y data points.
+            </summary>
+            <param name="xxxx">X matrix.</param>
+            <param name="yyyy">Y matrix.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.Clear">
+            <summary>
+            Clears all data points from this controller.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.RequestVirtualRangeChange">
+            <summary>
+            Requests the controller to invoke a virtual range change event.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.TranslateSurfaceX(System.Double)">
+            <summary>
+            Translates a surface x position to graph value.
+            </summary>
+            <param name="surfaceXPosition">The surface x position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphController`3.TranslateSurfaceY(System.Double)">
+            <summary>
+            Translates a surface y position to graph value.
+            </summary>
+            <param name="surfaceYPosition">The surface y position.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphDataPoint">
+            <summary>
+            Represents an <see cref="T:RealTimeGraphX.IGraphDataPoint"/> base class.
+            </summary>
+            <seealso cref="T:RealTimeGraphX.IGraphDataPoint" />
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.CompareTo(System.Object)">
+            <summary>
+            Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+            </summary>
+            <param name="obj">An object to compare with this instance.</param>
+            <returns>
+            A value that indicates the relative order of the objects being compared. The return value has these meanings: Value Meaning Less than zero This instance precedes <paramref name="obj" /> in the sort order. Zero This instance occurs in the same position in the sort order as <paramref name="obj" />. Greater than zero This instance follows <paramref name="obj" /> in the sort order.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_GreaterThan(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator &gt;.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_LessThan(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator &lt;.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_Equality(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_Inequality(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_Subtraction(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator -.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_Addition(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator +.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_Division(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator /.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.op_Multiply(RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Implements the operator *.
+            </summary>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.GetValue">
+            <summary>
+            Gets the inner value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.SetValue(System.Object)">
+            <summary>
+            Sets the inner value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="P:RealTimeGraphX.GraphDataPoint.Type">
+            <summary>
+            Gets the type of this graph data point.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint.GetDefaultMargins">
+            <summary>
+            Gets the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode"/> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphDataPoint`2">
+            <summary>
+            Represents an <see cref="T:RealTimeGraphX.IGraphDataPoint"/> base class.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TDataType">The type of the data type.</typeparam>
+            <seealso cref="T:RealTimeGraphX.GraphDataPoint" />
+        </member>
+        <member name="P:RealTimeGraphX.GraphDataPoint`2.Value">
+            <summary>
+            Gets or sets the encapsulated data point value.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphDataPoint`2"/> class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphDataPoint`2"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.CompareTo(System.Object)">
+            <summary>
+            Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+            </summary>
+            <param name="obj">An object to compare with this instance.</param>
+            <returns>
+            A value that indicates the relative order of the objects being compared. The return value has these meanings: Value Meaning Less than zero This instance precedes <paramref name="obj" /> in the sort order. Zero This instance occurs in the same position in the sort order as <paramref name="obj" />. Greater than zero This instance follows <paramref name="obj" /> in the sort order.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.GetValue">
+            <summary>
+            Gets the inner value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.SetValue(System.Object)">
+            <summary>
+            Sets the inner value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.ParseFrom(System.String)">
+            <summary>
+            Parses the specified value and returns a new instance of <see cref="!:TDataType"/> data point.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.op_Implicit(`0)~RealTimeGraphX.GraphDataPoint{`0,`1}">
+            <summary>
+            Performs an implicit conversion from <see cref="!:T"/> to <see cref="T:RealTimeGraphX.GraphDataPoint`2"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.op_Implicit(RealTimeGraphX.GraphDataPoint{`0,`1})~`0">
+            <summary>
+            Performs an implicit conversion from <see cref="T:RealTimeGraphX.GraphDataPoint`2"/> to <see cref="!:T"/>.
+            </summary>
+            <param name="instance">The instance.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.GetDefaultMargins">
+            <summary>
+            Gets the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPoint`2.OnGetDefaultMargins">
+            <summary>
+            Return the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode" /> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphDataPointHelper">
+            <summary>
+            Represents an <see cref="T:RealTimeGraphX.IGraphDataPoint"/> helper class.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointHelper.ComputeAbsolutePosition``1(``0,``0,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointHelper.CreateRange``1(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointHelper.Init``1">
+            <summary>
+            Initializes a new instance of the specified <see cref="T:RealTimeGraphX.IGraphDataPoint"/> type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointHelper.GetDefaultMargins``1">
+            <summary>
+            Gets the default margins for the specified IGraphDataPoint.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphDataPointTypeConverter">
+            <summary>
+            Represents the <see cref="T:RealTimeGraphX.DataPoints.TimeSpanDataPoint"/> type converter.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Returns whether this converter can convert an object of the given type to the type of this converter, using the specified context.
+            </summary>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext"></see> that provides a format context.</param>
+            <param name="sourceType">A <see cref="T:System.Type"></see> that represents the type you want to convert from.</param>
+            <returns>
+            true if this converter can perform the conversion; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Converts the given object to the type of this converter, using the specified context and culture information.
+            </summary>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext"></see> that provides a format context.</param>
+            <param name="culture">The <see cref="T:System.Globalization.CultureInfo"></see> to use as the current culture.</param>
+            <param name="value">The <see cref="T:System.Object"></see> to convert.</param>
+            <returns>
+            An <see cref="T:System.Object"></see> that represents the converted value.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Returns whether this converter can convert the object to the specified type, using the specified context.
+            </summary>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext"></see> that provides a format context.</param>
+            <param name="destinationType">A <see cref="T:System.Type"></see> that represents the type you want to convert to.</param>
+            <returns>
+            true if this converter can perform the conversion; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataPointTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts the given value object to the specified type, using the specified context and culture information.
+            </summary>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext"></see> that provides a format context.</param>
+            <param name="culture">A <see cref="T:System.Globalization.CultureInfo"></see>. If null is passed, the current culture is assumed.</param>
+            <param name="value">The <see cref="T:System.Object"></see> to convert.</param>
+            <param name="destinationType">The <see cref="T:System.Type"></see> to convert the value parameter to.</param>
+            <returns>
+            An <see cref="T:System.Object"></see> that represents the converted value.
+            </returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphDataQueue`1">
+            <summary>
+            Represents a blocking concurrent queue for graph data consumption.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:System.Collections.Concurrent.BlockingCollection`1" />
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataQueue`1.#ctor">
+            <summary>
+            Initializes a new instance of the GraphDataQueue, Use Add and TryAdd for Enqueue and TryEnqueue and Take and TryTake for Dequeue and TryDequeue functionality
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataQueue`1.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the GraphDataQueue, Use Add and TryAdd for Enqueue and TryEnqueue and Take and TryTake for Dequeue and TryDequeue functionality
+            </summary>
+            <param name="maxSize"></param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataQueue`1.BlockEnqueue(`0)">
+            <summary>
+            Enqueues the specified item.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataQueue`1.BlockDequeue">
+            <summary>
+            Blocks until an item is available for dequeuing.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphDataQueue`1.BlockDequeue(System.Threading.CancellationToken)">
+            <summary>
+            Blocks until an item is available for dequeuing.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphObject">
+            <summary>
+            Represents an <see cref="T:System.ComponentModel.INotifyPropertyChanged"/> supported graph object.
+            </summary>
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="E:RealTimeGraphX.GraphObject.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphObject.RaisePropertyChangedAuto(System.String)">
+            <summary>
+            Raises the property changed event.
+            </summary>
+            <param name="propName">Name of the property.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphObject.RaisePropertyChanged(System.String)">
+            <summary>
+            Raises the property changed event.
+            </summary>
+            <param name="propName">Name of the property.</param>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphRange">
+            <summary>
+             Represents a graph x/y data points boundaries.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphRange.MaximumX">
+            <summary>
+            Gets or sets the maximum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphRange.MinimumY">
+            <summary>
+            Gets or sets the minimum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphRange.MaximumY">
+            <summary>
+            Gets or sets the maximum y value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphRange.AutoY">
+            <summary>
+            Gets or sets a value indicating whether to automatically adjust the graph <see cref="P:RealTimeGraphX.IGraphRange.MaximumY"/> and <see cref="P:RealTimeGraphX.IGraphRange.MinimumY"/> according to the current effective data points.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode">
+            <summary>
+            Gets or sets the fallback mode for when AutoY is set to true and all Y values are equal so to retain a perspective.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphRange.AutoYFallBackMargins">
+            <summary>
+            Gets or sets the AutoY fallback margins when <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode"/> is set to Margins.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.GraphRange`2">
+            <summary>
+            Represents a graph X/Y range boundaries.
+            </summary>
+            <typeparam name="XDataPoint">Type of x-axis data point.</typeparam>
+            <typeparam name="YDataPoint">Type of y-axis data point.</typeparam>
+            <seealso cref="T:RealTimeGraphX.GraphObject" />
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.MaximumX">
+            <summary>
+            Gets or sets the maximum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.MinimumY">
+            <summary>
+            Gets or sets the minimum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.MaximumY">
+            <summary>
+            Gets or sets the maximum y value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.AutoY">
+            <summary>
+            Gets or sets a value indicating whether to automatically adjust the graph <see cref="P:RealTimeGraphX.GraphRange`2.MaximumY"/> and <see cref="P:RealTimeGraphX.GraphRange`2.MinimumY"/> according to the current visible data points.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.AutoYFallbackMode">
+            <summary>
+            Gets or sets the fallback mode for when AutoY is set to true and all Y values are equal so to retain a perspective.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.AutoYFallbackMargins">
+            <summary>
+            Gets or sets the margins for when <see cref="P:RealTimeGraphX.GraphRange`2.AutoYFallbackMode"/> is set to <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins"/>.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphRange`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphRange`2"/> class.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.RealTimeGraphX#IGraphRange#MaximumX">
+            <summary>
+            Gets or sets the maximum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.RealTimeGraphX#IGraphRange#MinimumY">
+            <summary>
+            Gets or sets the minimum x value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.RealTimeGraphX#IGraphRange#MaximumY">
+            <summary>
+            Gets or sets the maximum y value.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphRange`2.RealTimeGraphX#IGraphRange#AutoYFallBackMargins">
+            <summary>
+            Gets or sets the fallback mode for when AutoY is set to true and all Y values are equal so to retain a perspective.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.GraphRangeAutoYFallBackMode">
+            <summary>
+            Represents an <see cref="T:RealTimeGraphX.IGraphRange"/> AutoY fall-back mode for then all Y values are equal.
+            </summary>
+        </member>
+        <member name="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins">
+            <summary>
+            Create fake min/max margins of 0.5 from the Y value.
+            </summary>
+        </member>
+        <member name="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.MinMax">
+            <summary>
+            Fallback to <see cref="P:RealTimeGraphX.IGraphRange.MinimumY"/> and <see cref="P:RealTimeGraphX.IGraphRange.MaximumY"/>.
+            </summary>
+        </member>
+        <member name="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.None">
+            <summary>
+            Do nothing when all Y values are equal.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.GraphRenderer`1">
+            <summary>
+            Represents an <see cref="T:RealTimeGraphX.IGraphRenderer`1"/> base class.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <seealso cref="T:RealTimeGraphX.GraphObject" />
+            <seealso cref="T:RealTimeGraphX.IGraphRenderer`1" />
+        </member>
+        <member name="M:RealTimeGraphX.GraphRenderer`1.ConvertXValueToRendererValue(RealTimeGraphX.IGraphSurface{`0},System.Double)">
+            <summary>
+            Converts the specified relative x position to a graph surface absolute position.
+            </summary>
+            <param name="surface">The target surface.</param>
+            <param name="x">The relative x position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphRenderer`1.ConvertYValueToRendererValue(RealTimeGraphX.IGraphSurface{`0},System.Double)">
+            <summary>
+            Converts the specified relative y position to a graph surface absolute position.
+            </summary>
+            <param name="surface">The surface.</param>
+            <param name="y">The relative y position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphRenderer`1.Render(RealTimeGraphX.IGraphSurface{`0},`0,RealTimeGraphX.IGraphRange,System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Arranges the series of data points and returns a series of drawing points.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="range">Instance of graph range.</param>
+            <param name="xx">Collection of x coordinates.</param>
+            <param name="yy">Collection of y coordinates.</param>
+            <param name="minimumX">The minimum x coordinates value.</param>
+            <param name="maximumX">The maximum x coordinates value.</param>
+            <param name="minimumY">The minimum y coordinates value.</param>
+            <param name="maximumY">The maximum y coordinates value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.GraphRenderer`1.Draw(RealTimeGraphX.IGraphSurface{`0},`0,System.Collections.Generic.IEnumerable{System.Drawing.PointF},System.Int32,System.Int32)">
+            <summary>
+            Draws the specified data series points on the target surface.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="points">The collection of the current data series drawing points.</param>
+            <param name="index">The index of the current data series within the collection of data series.</param>
+            <param name="count">The length of the data series collection.</param>
+        </member>
+        <member name="M:RealTimeGraphX.GraphRenderer`1.GetFillPoints(RealTimeGraphX.IGraphSurface{`0},System.Collections.Generic.IEnumerable{System.Drawing.PointF})">
+            <summary>
+            Gets a closed polygon version of the specified drawing points.
+            </summary>
+            <param name="surface">The target surface.</param>
+            <param name="points">The drawing points.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.GraphTransform">
+            <summary>
+            Represents a graph transformation.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphTransform.ScaleX">
+            <summary>
+            Gets or sets the horizontal scale factor.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphTransform.ScaleY">
+            <summary>
+            Gets or sets the vertical scale factor.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphTransform.TranslateX">
+            <summary>
+            Gets or sets the horizontal translate transformation.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.GraphTransform.TranslateY">
+            <summary>
+            Gets or sets the vertical translate transformation.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.GraphTransform.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RealTimeGraphX.GraphTransform"/> class.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphComponent">
+            <summary>
+            Represents a RealTimeGraphX component.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphController">
+            <summary>
+            Represents a graph controller.
+            </summary>
+            <seealso cref="T:RealTimeGraphX.IGraphComponent" />
+        </member>
+        <member name="E:RealTimeGraphX.IGraphController.EffectiveRangeChanged">
+            <summary>
+            Occurs when the current effective minimum/maximum values have changed.
+            </summary>
+        </member>
+        <member name="E:RealTimeGraphX.IGraphController.VirtualRangeChanged">
+            <summary>
+            Occurs when the current virtual (effective minimum/maximum after transformation) minimum/maximum values have changed.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.RefreshRate">
+            <summary>
+            Gets or sets the controller refresh rate.
+            Higher rate requires more CPU time.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.IsPaused">
+            <summary>
+            Gets or sets a value indicating whether to pause the rendering.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.DisableRendering">
+            <summary>
+            Gets or sets a value indicating whether to disable the rendering of data.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.EffectiveMinimumX">
+            <summary>
+            Gets the current effective x-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.EffectiveMaximumX">
+            <summary>
+            Gets the current effective x-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.EffectiveMinimumY">
+            <summary>
+            Gets the current effective y-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.EffectiveMaximumY">
+            <summary>
+            Gets the current effective y-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.VirtualMinimumX">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) x-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.VirtualMaximumX">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) x-axis maximum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.VirtualMinimumY">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) y-axis minimum.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.VirtualMaximumY">
+            <summary>
+            Gets the current virtual (effective minimum/maximum after transformation) y-axis maximum.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController.Clear">
+            <summary>
+            Clears all data points from this controller.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController.ClearCommand">
+            <summary>
+            Gets the clear command.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController.RequestVirtualRangeChange">
+            <summary>
+            Requests the controller to invoke a virtual range change event.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController.TranslateSurfaceX(System.Double)">
+            <summary>
+            Translates a surface x position to graph value.
+            </summary>
+            <param name="surfaceXPosition">The surface x position.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController.TranslateSurfaceY(System.Double)">
+            <summary>
+            Translates a surface y position to graph value.
+            </summary>
+            <param name="surfaceYPosition">The surface y position.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphController`1">
+            <summary>
+            Represents a graph controller capable of pushing data points to it's associated <see cref="T:RealTimeGraphX.IGraphRenderer`1">Graph Renderer</see>
+            and rendering them to it's associated <see cref="T:RealTimeGraphX.IGraphSurface`1">Graph Surface</see>.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <seealso cref="T:RealTimeGraphX.IGraphComponent" />
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController`1.DataSeriesCollection">
+            <summary>
+            Gets the data series collection.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController`1.Renderer">
+            <summary>
+            Gets or sets the graph renderer.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController`1.Surface">
+            <summary>
+            Gets or sets the graph surface.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphController`3">
+            <summary>
+            Represents a graph controller capable of pushing data points to it's associated <see cref="T:RealTimeGraphX.IGraphRenderer`1">Graph Renderer</see>
+            and rendering them to it's associated <see cref="T:RealTimeGraphX.IGraphSurface`1">Graph Surface</see>.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <typeparam name="TXDataPoint">The type of the x data point.</typeparam>
+            <typeparam name="TYDataPoint">The type of the y data point.</typeparam>
+            <seealso cref="T:RealTimeGraphX.IGraphComponent" />
+        </member>
+        <member name="P:RealTimeGraphX.IGraphController`3.Range">
+            <summary>
+            Gets or sets the graph range (data point boundaries).
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController`3.PushData(`1,`2)">
+            <summary>
+            Submits the specified x and y data points.
+            If the controller has more than one data series the data points will be duplicated.
+            </summary>
+            <param name="x">X data point.</param>
+            <param name="y">Y data point.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController`3.PushData(System.Collections.Generic.IEnumerable{`1},System.Collections.Generic.IEnumerable{`2})">
+            <summary>
+            Submits the specified collections of x and y data points.
+            If the controller has more than one data series the data points will be distributed evenly. 
+            </summary>
+            <param name="xx">X data point collection.</param>
+            <param name="yy">Y data point collection.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphController`3.PushData(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{`1}},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{`2}})">
+            <summary>
+            Submits a matrix of x and y data points. Meaning each data series should process a single collection of x/y data points.
+            </summary>
+            <param name="xxxx">X matrix.</param>
+            <param name="yyyy">Y matrix.</param>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphDataPoint">
+            <summary>
+            Represents a graph X or Y data point that can be pushed to a <see cref="!:IGraphController&lt;TColor, TBrush, TXDataPoint, TYDataPoint&gt;">Graph Controller</see>.
+            </summary>
+            <seealso cref="T:System.IComparable" />
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.Add(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Sums the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.Subtract(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Subtract the value of another instance from this instance and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.Multiply(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Multiplies the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.Divide(RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Divides the value of this instance with another instance value and returns the result.
+            </summary>
+            <param name="other">The other instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.CreateRange(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Int32)">
+            <summary>
+            Creates a range of values from the specified minimum and maximum.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="count">The count.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.ComputeRelativePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint)">
+            <summary>
+            Returns the percentage value of this instance between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.ComputeAbsolutePosition(RealTimeGraphX.IGraphDataPoint,RealTimeGraphX.IGraphDataPoint,System.Double)">
+            <summary>
+            Returns the absolute value of the specified percentage value between the specified minimum and maximum values.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="percentage">The percentage.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.GetValue">
+            <summary>
+            Gets the encapsulated value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.SetValue(System.Object)">
+            <summary>
+            Sets the encapsulated value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.ToString(System.String)">
+            <summary>
+            Returns a formated string of this data point.
+            </summary>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.Parse(System.String)">
+            <summary>
+            Parses the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphDataPoint.GetDefaultMargins">
+            <summary>
+            Gets the default margins for this data point type.
+            <see cref="P:RealTimeGraphX.IGraphRange.AutoYFallbackMode"/> and <see cref="F:RealTimeGraphX.GraphRangeAutoYFallBackMode.Margins"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphDataSeries">
+            <summary>
+            Represents a graph data series.
+            </summary>
+            <seealso cref="T:RealTimeGraphX.IGraphComponent" />
+        </member>
+        <member name="P:RealTimeGraphX.IGraphDataSeries.Name">
+            <summary>
+            Gets or sets the series name.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphDataSeries.StrokeThickness">
+            <summary>
+            Gets or sets the stroke thickness.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphDataSeries.UseFill">
+            <summary>
+            Gets or sets a value indicating whether to fill the series.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphDataSeries.IsVisible">
+            <summary>
+            Gets or sets a value indicating whether this series should be visible.
+            </summary>
+        </member>
+        <member name="P:RealTimeGraphX.IGraphDataSeries.CurrentValue">
+            <summary>
+            Gets the current value.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphRenderer`1">
+            <summary>
+            Represents a graph renderer capable of receiving a series of data points from a controller and transforming them to drawing points.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <seealso cref="T:RealTimeGraphX.IGraphComponent" />
+        </member>
+        <member name="M:RealTimeGraphX.IGraphRenderer`1.Render(RealTimeGraphX.IGraphSurface{`0},`0,RealTimeGraphX.IGraphRange,System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Arranges the series of data points and returns a series of drawing points.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="range">Instance of graph range.</param>
+            <param name="xx">Collection of x coordinates.</param>
+            <param name="yy">Collection of y coordinates.</param>
+            <param name="minimumX">The minimum x coordinates value.</param>
+            <param name="maximumX">The maximum x coordinates value.</param>
+            <param name="minimumY">The minimum y coordinates value.</param>
+            <param name="maximumY">The maximum y coordinates value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphRenderer`1.Draw(RealTimeGraphX.IGraphSurface{`0},`0,System.Collections.Generic.IEnumerable{System.Drawing.PointF},System.Int32,System.Int32)">
+            <summary>
+            Draws the specified data series points on the target surface.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="points">The collection of the current data series drawing points.</param>
+            <param name="index">The index of the current data series within the collection of data series.</param>
+            <param name="count">The length of the data series collection.</param>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphSurface">
+            <summary>
+            Represents a graph drawing surface capable of drawing a series of points submitted by a graph renderer.
+            </summary>
+        </member>
+        <member name="E:RealTimeGraphX.IGraphSurface.SurfaceSizeChanged">
+            <summary>
+            Occurs when the surface size has changed.
+            </summary>
+        </member>
+        <member name="E:RealTimeGraphX.IGraphSurface.ZoomRectChanged">
+            <summary>
+            Occurs when the surface zoom rectangle has changed.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface.GetSize">
+            <summary>
+            Returns the actual size of the surface.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface.GetZoomRect">
+            <summary>
+            Returns the current bounds of the zooming rectangle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RealTimeGraphX.IGraphSurface`1">
+            <summary>
+            Represents a graph drawing surface capable of drawing a series of points submitted by a graph renderer.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <seealso cref="T:RealTimeGraphX.IGraphComponent" />
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface`1.BeginDraw">
+            <summary>
+            Called before drawing has started.
+            </summary>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface`1.DrawSeries(`0,System.Collections.Generic.IEnumerable{System.Drawing.PointF})">
+            <summary>
+            Draws the stroke of the specified data series points.
+            </summary>
+            <param name="dataSeries">The data series.</param>
+            <param name="points">The points.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface`1.FillSeries(`0,System.Collections.Generic.IEnumerable{System.Drawing.PointF})">
+            <summary>
+            Fills the specified data series points.
+            </summary>
+            <param name="dataSeries">The data series.</param>
+            <param name="points">The points.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface`1.SetTransform(RealTimeGraphX.GraphTransform)">
+            <summary>
+            Applies transformation on the current pass.
+            </summary>
+            <param name="transform">The transform.</param>
+        </member>
+        <member name="M:RealTimeGraphX.IGraphSurface`1.EndDraw">
+            <summary>
+            Called when drawing has completed.
+            </summary>
+        </member>
+        <member name="T:RealTimeGraphX.Renderers.ScrollingLineRenderer`1">
+            <summary>
+            Represents a scrolling style <see cref="T:RealTimeGraphX.GraphRenderer`1"/>.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <seealso cref="T:RealTimeGraphX.GraphRenderer`1" />
+        </member>
+        <member name="M:RealTimeGraphX.Renderers.ScrollingLineRenderer`1.Render(RealTimeGraphX.IGraphSurface{`0},`0,RealTimeGraphX.IGraphRange,System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Arranges the series of data points and returns a series of drawing points.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="range">Instance of graph range.</param>
+            <param name="xx">Collection of x coordinates.</param>
+            <param name="yy">Collection of y coordinates.</param>
+            <param name="minimumX">The minimum x coordinates value.</param>
+            <param name="maximumX">The maximum x coordinates value.</param>
+            <param name="minimumY">The minimum y coordinates value.</param>
+            <param name="maximumY">The maximum y coordinates value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.Renderers.ScrollingLineRenderer`1.Draw(RealTimeGraphX.IGraphSurface{`0},`0,System.Collections.Generic.IEnumerable{System.Drawing.PointF},System.Int32,System.Int32)">
+            <summary>
+            Draws the specified data series points on the target surface.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="points">The collection of the current data series drawing points.</param>
+            <param name="index">The index of the current data series within the collection of data series.</param>
+            <param name="count">The length of the data series collection.</param>
+        </member>
+        <member name="T:RealTimeGraphX.Renderers.SimpleLineRenderer`1">
+            <summary>
+            Represents a looping line graph style <see cref="T:RealTimeGraphX.GraphRenderer`1"/>.
+            </summary>
+            <typeparam name="TDataSeries">The type of the data series.</typeparam>
+            <seealso cref="T:RealTimeGraphX.GraphRenderer`1" />
+        </member>
+        <member name="M:RealTimeGraphX.Renderers.SimpleLineRenderer`1.Render(RealTimeGraphX.IGraphSurface{`0},`0,RealTimeGraphX.IGraphRange,System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},System.Collections.Generic.List{RealTimeGraphX.GraphDataPoint},RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint,RealTimeGraphX.GraphDataPoint)">
+            <summary>
+            Arranges the series of data points and returns a series of drawing points.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="range">Instance of graph range.</param>
+            <param name="xx">Collection of x coordinates.</param>
+            <param name="yy">Collection of y coordinates.</param>
+            <param name="minimumX">The minimum x coordinates value.</param>
+            <param name="maximumX">The maximum x coordinates value.</param>
+            <param name="minimumY">The minimum y coordinates value.</param>
+            <param name="maximumY">The maximum y coordinates value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RealTimeGraphX.Renderers.SimpleLineRenderer`1.Draw(RealTimeGraphX.IGraphSurface{`0},`0,System.Collections.Generic.IEnumerable{System.Drawing.PointF},System.Int32,System.Int32)">
+            <summary>
+            Draws the specified data series points on the target surface.
+            </summary>
+            <param name="surface">The target graph surface.</param>
+            <param name="series">The instance of the current rendered data series.</param>
+            <param name="points">The collection of the current data series drawing points.</param>
+            <param name="index">The index of the current data series within the collection of data series.</param>
+            <param name="count">The length of the data series collection.</param>
+        </member>
+    </members>
+</doc>

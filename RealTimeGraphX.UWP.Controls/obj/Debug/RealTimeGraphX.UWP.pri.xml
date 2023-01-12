@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="RealTimeGraphX.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="RealTimeGraphX.UWP">
+				<NamedResource name="RealTimeGraphX.UWP.xr.xml" uri="ms-resource://RealTimeGraphX.UWP/Files/RealTimeGraphX.UWP/RealTimeGraphX.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>RealTimeGraphX.UWP\RealTimeGraphX.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://RealTimeGraphX.UWP/Files/RealTimeGraphX.UWP/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>RealTimeGraphX.UWP\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,11 @@
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\bin\Debug\netstandard2.0\RealTimeGraphX.deps.json
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\bin\Debug\netstandard2.0\RealTimeGraphX.dll
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\bin\Debug\netstandard2.0\RealTimeGraphX.pdb
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\bin\Debug\netstandard2.0\RealTimeGraphX.xml
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.csproj.AssemblyReference.cache
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.AssemblyInfoInputs.cache
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.AssemblyInfo.cs
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.csproj.CoreCompileInputs.cache
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.dll
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX\obj\Debug\netstandard2.0\RealTimeGraphX.pdb

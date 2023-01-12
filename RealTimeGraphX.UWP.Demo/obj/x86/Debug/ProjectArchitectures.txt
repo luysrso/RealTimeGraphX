@@ -1,0 +1,2 @@
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX.UWP.Demo\RealTimeGraphX.UWP.Demo.csproj;x86
+C:\Users\manue\OneDrive - Sistemas Moviles SA\Documentos\Panavent\src\software\app\panavent.app.core\RealTimeGraphX\RealTimeGraphX.UWP\RealTimeGraphX.UWP.csproj;neutral

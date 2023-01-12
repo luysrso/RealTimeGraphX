@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3+3O+4QIduXWGQKDUXCD7DQwjGxePkUoenHTaYwMz+g9QypUqB2je0Age0/IRYZ2p7HzGfP4UlVFxz3/VAomyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\manue\\OneDrive - Sistemas Moviles SA\\Documentos\\Panavent\\src\\software\\app\\panavent.app.core\\RealTimeGraphX\\RealTimeGraphX\\RealTimeGraphX.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manue\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\manue\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
